@@ -30,6 +30,7 @@ body{
     margin: 0 0 0 345px;
     color: deeppink;
     font-size: 69px;
+    text-shadow: 1px 1px 2px black, 0 0 1em #0c0c0c, 0 0 0.6em #000000;
 }
 .row{
     margin: 0 0 0 80px !important;
