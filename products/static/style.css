@@ -1,0 +1,18 @@
+body{
+    background: #44C2FA;
+;
+}
+.card-body{
+    background: yellow;
+}
+.container-fluid{
+    background: #C266DA;
+}
+#comment{
+    border: 5px solid #d725c0;
+    width: 500px;
+    height: 260px;
+}
+.button{
+    border: 5px solid red;
+}
