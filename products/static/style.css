@@ -1,6 +1,5 @@
 body{
-    background: #44C2FA;
-;
+    background-color: aqua !important;
 }
 .card-body{
     background: yellow;
