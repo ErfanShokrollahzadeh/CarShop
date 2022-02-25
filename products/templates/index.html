@@ -1,30 +1,33 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
-
 {% block content %}
+<div>
+    <h1 class="welcom">Welcom To CarShop</h1>
+</div>
+<hr>
 <div class="slideshow-container">
-
+    {% for product in products %}
     <div class="mySlides">
-        <div class="numbertext">1 / 3</div>
-        <img src="{% static 'image.png' %}" style="width:100%">
+        <div class="numbertext">1 / 1</div>
+        <img src="{{ product.image_url }}" style="width:500px">
         <div class="text">Caption Text</div>
     </div>
 
-    <div class="mySlides">
-        <div class="numbertext">2 / 3</div>
-        <img src="{% static 'image.png' %}" style="width:100%">
-        <div class="text">Caption Two</div>
-    </div>
+<!--    <div class="mySlides">-->
+<!--        <div class="numbertext">2 / 3</div>-->
+<!--        <img src="{{ product.image_url }}" style="width:100%">-->
+<!--        <div class="text">Caption Two</div>-->
+<!--    </div>-->
 
-    <div class="mySlides">
-        <div class="numbertext">3 / 3</div>
-        <img src="{% static 'image.png' %}" style="width:100%">
-        <div class="text">Caption Three</div>
-    </div>
+<!--    <div class="mySlides">-->
+<!--        <div class="numbertext">3 / 3</div>-->
+<!--        <img src="{{ product.image_url }}" style="width:100%">-->
+<!--        <div class="text">Caption Three</div>-->
+<!--    </div>-->
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+    {% endfor %}
 </div>
 <br>
 

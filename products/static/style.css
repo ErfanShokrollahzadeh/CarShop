@@ -15,3 +15,16 @@ body{
 .button{
     border: 5px solid red;
 }
+/*.background{
+    background-image: url('image.png');
+  background-size: 50%;
+  width: 1300px;
+  height: 400px;
+  border: 2px solid;
+  color: pink;
+}*/
+.welcom{
+    margin: 0 0 0 345px;
+    color: deeppink;
+    font-size: 69px;
+}
