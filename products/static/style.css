@@ -11,9 +11,12 @@ body{
     border: 5px solid #d725c0;
     width: 500px;
     height: 260px;
+    margin: 0 0 0 733px;
 }
 .button{
     border: 5px solid red;
+    margin: 0 0 0 1158px;
+    border-radius: 5px;
 }
 /*.background{
     background-image: url('image.png');
@@ -27,4 +30,8 @@ body{
     margin: 0 0 0 345px;
     color: deeppink;
     font-size: 69px;
+}
+.row{
+    margin: 0 0 0 80px !important;
+    --bs-gutter-x: none !important;
 }
