@@ -10,4 +10,3 @@ class Product(models.Model):
 class Slider(models.Model):
     objects = None
     image_url = models.CharField(max_length=2083)
-

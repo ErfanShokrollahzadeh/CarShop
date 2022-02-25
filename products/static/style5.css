@@ -2,7 +2,7 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 500px;
+  max-width: 1200px;
   position: relative;
   margin: auto;
 }
@@ -16,7 +16,7 @@
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 75% !important;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -27,7 +27,6 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
@@ -54,7 +53,7 @@
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
-  padding: 8px 12px;
+  padding: 5px 10px;
   position: absolute;
   top: 0;
 }

@@ -4,12 +4,16 @@
 <div>
     <h1 class="welcom">Welcom To CarShop</h1>
 </div>
-<hr>
+<hr style="height:10px">
+<label>
+    <input class="search" type="search" placeholder="Search">
+</label>
+<hr style="height:10px">
 <div class="slideshow-container">
     {% for product in products %}
     <div class="mySlides">
-        <div class="numbertext">1 / 1</div>
-        <img src="{{ product.image_url }}" style="width:500px">
+<!--        <div class="numbertext">1 / 1</div>-->
+        <img src="{{ product.image_url }}" style="width:1200px">
         <div class="text">info</div>
     </div>
 
@@ -51,7 +55,7 @@
     {% endfor %}
 </div>
 <br>
-<textarea id="comment" cols="40" rows="10" placeholder="Enter your comment"></textarea><br>
+<textarea id="comment" cols="40" rows="10" placeholder="Enter your commentd"></textarea><br>
 
 <label class="button">
     <a href="confirm.html"><input type="submit"></a>
