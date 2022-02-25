@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
+class Slider(models.Model):
+    objects = None
+    image_url = models.CharField(max_length=2083)

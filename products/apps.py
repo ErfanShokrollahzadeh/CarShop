@@ -1,4 +1,4 @@
-from django.apps import AppConfig
+rfrom django.apps import AppConfig
 
 
 class ProductsConfig(AppConfig):
