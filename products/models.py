@@ -9,3 +9,6 @@ class Product(models.Model):
 
 class Slider(models.Model):
     image_url = models.CharField(max_length=2083)
+
+class Navbar(models.Model):
+    title = models.CharField(max_length=100)
