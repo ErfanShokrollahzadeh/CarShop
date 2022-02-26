@@ -18,11 +18,11 @@
   position: absolute;
   top: 75% !important;
   width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
+  margin-top: -200px;
+  padding: 25px;
+  color: #e9f905;;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;

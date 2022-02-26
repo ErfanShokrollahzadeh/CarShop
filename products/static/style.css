@@ -15,7 +15,7 @@ body{
 }
 .button{
     border: 5px solid red;
-    margin: 0 0 0 1158px;
+    margin: 0 0 0 1160px;
     border-radius: 5px;
 }
 /*.background{
@@ -32,13 +32,45 @@ body{
     font-size: 69px;
     text-shadow: 1px 1px 2px black, 0 0 1em #0c0c0c, 0 0 0.6em #000000;
 }
+.products{
+    margin: 0px 0 0 455px;
+    color: #feff27;
+    font-size: 70px;
+    text-shadow: 1px 1px 2px #fd0101, 0 0 1em #000000, 0 0 0.6em #000000;
+}
 .row{
-    margin: 0 0 0 80px !important;
-    --bs-gutter-x: none !important;
+    margin: 0 0 0 50px !important;
+    --bs-gutter-x: 5px !important;
+    --bs-gutter-y: 5px !important;
 }
 .search{
     margin: 0 0 0 400px;
     width: 500px;
     height: 37px;
     border: 3px dotted #0331cb;
+}
+.footer{
+    color: #14ef12;
+    height: 100px;
+    border: 3px solid gray;
+    background-color: gray;
+}
+.button_link{
+    position: relative;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.button_right{
+    position: relative;
+    padding-left: 10px;
+    padding-right: 20px;
+    float: right;
+}
+a.button_link{
+     color: #26fd0d !important;
+     font-size: 25px;
+}
+a.button_right{
+    color: #26fd0d !important;
+     font-size: 25px;
 }
