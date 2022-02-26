@@ -5,15 +5,27 @@
     <h1 class="welcom">Welcom To CarShop</h1>
 </div>
 <hr style="height:10px">
+
 <label>
-    <input class="search" type="search" placeholder="Search">
+    <input id="search" type="text" placeholder="Search" onkeyup="myFunction()" title="Type in a category">
+      <ul id="myMenu">
+      <li><a href="#">BMW</a></li>
+      <li><a href="#">BENZ</a></li>
+      <li><a href="#">Ferrari</a></li>
+      <li><a href="#">Lamborghini</a></li>
+      <li><a href="#">Bugatti Chiron</a></li>
+      <li><a href="#">maclaren</a></li>
+      <li><a href="#">pagani</a></li>
+      <li><a href="#">toyota gt86</a></li>
+    </ul>
 </label>
 <hr style="height:10px">
+
 <div class="slideshow-container">
-    {% for product in products %}
+    {% for slider in products %}
     <div class="mySlides">
 <!--    <div class="numbertext">1 / 1</div>-->
-        <img src="{{ product.image_url }}" style="width:1200px">
+        <img src="{{ slider.image_url }}" style="width:1200px">
         <div class="text">info</div>
     </div>
 

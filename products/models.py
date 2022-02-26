@@ -8,7 +8,7 @@ class Product(models.Model):
     image_url = models.CharField(max_length=2083)
 
 class Slider(models.Model):
-    image_url = models.CharField(max_length=2083)
+    img_urls = models.CharField(max_length=2083)
 
 class Navbar(models.Model):
     title = models.CharField(max_length=100)
