@@ -89,7 +89,8 @@ a.button_right{
      font-size: 25px;
 }
 #footer{
-color: blue;
-    float: left;   display: inline-block !important;   width: 15% !important;
-    margin-right: -50px;
+    color: #00ff44;
+    float: left;   display: inline-block !important;   width: 18% !important;
+    margin-right: -60px;
+    font-size: 20px;
 }
