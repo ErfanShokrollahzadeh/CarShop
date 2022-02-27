@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     {% load static %}
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,15 +52,17 @@
     {% endblock %}
 </div>
 
+
 <div class="footer">
-    <small></small><br>
-    <a id="footer" class="button_link" href="#">About</a>
-    <a class="button_link" href="#">Advertising</a>
-    <a class="button_link" href="#">Business</a>
-    <a class="button_link" href="#">How search works</a>
-    <a class="button_right" href="#">Privacy</a>
-    <a class="button_right" href="#">Terms</a>
-    <a class="button_right" href="#">Setting</a>
+    <div class="row">
+
+        {% for footer in footers %}
+
+        <a id="footer" href="{{ footer.url }}">{{ footer.title }}</a>
+
+        {% endfor %}
+
+    </div>
 </div>
 
 
@@ -123,6 +124,7 @@ function myFunction() {
     }
   }
 }
+
 
 </script>
 </body>

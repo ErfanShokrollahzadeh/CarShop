@@ -12,4 +12,10 @@ class Slider(models.Model):
     img_urls = models.CharField(max_length=2083)
 
 class Navbar(models.Model):
+    objects = None
     title = models.CharField(max_length=100)
+
+class Footer(models.Model):
+    objects = None
+    title = models.CharField(max_length=100)
+    url = models.CharField(max_length=2083)
