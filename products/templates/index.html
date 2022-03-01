@@ -6,19 +6,11 @@
 </div>
 <hr style="height:10px">
 
-<label>
-    <input id="search" type="text" placeholder="Search" onkeyup="myFunction()" title="Type in a category">
-      <ul id="myMenu">
-      <li><a href="#">BMW</a></li>
-      <li><a href="#">BENZ</a></li>
-      <li><a href="#">Ferrari</a></li>
-      <li><a href="#">Lamborghini</a></li>
-      <li><a href="#">Bugatti Chiron</a></li>
-      <li><a href="#">maclaren</a></li>
-      <li><a href="#">pagani</a></li>
-      <li><a href="#">toyota gt86</a></li>
-    </ul>
-</label>
+<form autocomplete="off">
+    <div class="autocomplete" >
+        <input id="myInput" type="text" placeholder="Search..">
+    </div>
+</form>
 <hr style="height:10px">
 
 <div class="slideshow-container">
@@ -72,6 +64,6 @@
 <textarea id="comment" cols="40" rows="10" placeholder="Enter your commentd"></textarea><br>
 
 <label class="button">
-    <a href="confirm.html"><input type="submit"></a>
+    <a href="#"><button>Submit</button></a>
 </label>
 {% endblock %}

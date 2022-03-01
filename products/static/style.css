@@ -14,9 +14,10 @@ body{
     margin: 0 0 0 733px;
 }
 .button{
-    border: 5px solid red;
+    color: red;
+    border: 2px solid red;
     margin: 0 0 0 1160px;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 /*.background{
     background-image: url('image.png');
@@ -43,12 +44,88 @@ body{
     --bs-gutter-x: 5px !important;
     --bs-gutter-y: 5px !important;
 }
-#search{
-    margin: 0 0 0 400px !important;
-    width: 500px !important;
-    height: 37px !important;
-    border: 3px dotted #0331cb !important;
+input[type=text] {
+  color: blue;
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 17px;
+  background-color: #d4ff6c;;
+  background-repeat: no-repeat;
+  transition: width 0.4s ease-in-out;
 }
+input[type=text]:focus {
+  width: 100%;
+  border: 4px dotted green !important;
+}
+.autocomplete {
+  margin: 0 0 0 410px !important;
+  width: 500px !important;
+  position: relative;
+  display: inline-block;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+#myInput{
+        height: 40px !important;
+}
+
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 17px;
+  background-color: #f2ffc9;
+  background-repeat: no-repeat;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+  width: 100%;
+}
+
 #myMenu {
   list-style-type: decimal !important;
   padding: 0;
@@ -68,25 +145,6 @@ body{
     height: 100px;
     border: 3px solid gray;
     background-color: gray;
-}
-.button_link{
-    position: relative;
-    padding-left: 20px;
-    padding-right: 10px;
-}
-.button_right{
-    position: relative;
-    padding-left: 10px;
-    padding-right: 20px;
-    float: right;
-}
-a.button_link{
-     color: #26fd0d !important;
-     font-size: 25px;
-}
-a.button_right{
-    color: #26fd0d !important;
-     font-size: 25px;
 }
 #footer{
     color: #00ff44;
