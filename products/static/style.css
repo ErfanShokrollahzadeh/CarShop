@@ -57,7 +57,7 @@ input[type=text] {
 }
 input[type=text]:focus {
   width: 100%;
-  border: 4px dotted green !important;
+  border: 4px dotted red !important;
 }
 .autocomplete {
   margin: 0 0 0 410px !important;
