@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product,Slider,Navbar,Footer
+from .models import Product, Slider, Navbar, Footer, Slider2
 
 
 class AdminProduct(admin.ModelAdmin):
@@ -10,3 +10,4 @@ admin.site.register(Product,AdminProduct)
 admin.site.register(Slider)
 admin.site.register(Navbar)
 admin.site.register(Footer)
+admin.site.register(Slider2)
