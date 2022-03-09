@@ -11,5 +11,34 @@ def Car(request):
     return render(request,'index.html',{'products':products,'sliders':sliders,'footers':footers,'navbars':navbars,'Sliders2':Sliders2})
 
 
-def erfan(request):
-    return render(request,'index1.html')
+def BMW(request):
+    sliders = Slider.objects.all()
+    return render(request,'index2.html',{'sliders':sliders})
+
+def BENZ(request):
+    sliders = Slider.objects.all()
+    return render(request,'index3.html',{'sliders':sliders})
+
+def Ferrari(request):
+    sliders = Slider.objects.all()
+    return render(request,'index4.html',{'sliders':sliders})
+
+def Lamborghini(request):
+    sliders = Slider.objects.all()
+    return render(request,'index5.html',{'sliders':sliders})
+
+def Bugatti(request):
+    sliders = Slider.objects.all()
+    return render(request,'index6.html',{'sliders':sliders})
+
+def maclaren(request):
+    sliders = Slider.objects.all()
+    return render(request,'index7.html',{'sliders':sliders})
+
+def pagani (request):
+    sliders = Slider.objects.all()
+    return render(request,'index8.html',{'sliders':sliders})
+
+def toyota(request):
+    sliders = Slider.objects.all()
+    return render(request,'index9.html',{'sliders':sliders})

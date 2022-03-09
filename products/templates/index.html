@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
 <div>
-    <h1 class="welcom">👋Welcom To CarShop👋</h1>
+    <h1 class="welcome">👋Welcom To CarShop👋</h1>
 </div>
 <hr style="height:10px">
 
@@ -16,46 +16,9 @@
 <div class="slideshow-container">
     {% for slider in sliders %}
     <div class="mySlides">
-        <!--    <div class="numbertext">1 / 1</div>-->
         <img src="{{ slider.img_urls }}" style="width:1200px">
         <div class="text">info</div>
     </div>
-
-    <!--    <div class="mySlides">-->
-    <!--        <div class="numbertext">2 / 3</div>-->
-    <!--        <img src="{{ product.image_url }}" style="width:100%">-->
-    <!--        <div class="text">Caption Two</div>-->
-    <!--    </div>-->
-    <!--    <div class="mySlides">-->
-    <!--        <div class="numbertext">3 / 3</div>-->
-    <!--        <img src="{{ product.image_url }}" style="width:100%">-->
-    <!--        <div class="text">Caption Three</div>-->
-    <!--    </div>-->
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    {% endfor %}
-</div><br><br>
-
-<div class="slideshow-container">
-    {% for Sliders2 in Sliders2 %}
-    <div class="mySlides">
-        <!--    <div class="numbertext">1 / 1</div>-->
-        <img src="{{ sliders2.img_urls }}" style="width:1200px">
-        <div class="text">info</div>
-    </div>
-
-    <!--    <div class="mySlides">-->
-    <!--        <div class="numbertext">2 / 3</div>-->
-    <!--        <img src="{{ product.image_url }}" style="width:100%">-->
-    <!--        <div class="text">Caption Two</div>-->
-    <!--    </div>-->
-    <!--    <div class="mySlides">-->
-    <!--        <div class="numbertext">3 / 3</div>-->
-    <!--        <img src="{{ product.image_url }}" style="width:100%">-->
-    <!--        <div class="text">Caption Three</div>-->
-    <!--    </div>-->
-
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
     {% endfor %}
@@ -64,7 +27,8 @@
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
-</div><br><br>
+</div><br><br><br>
+
 
 <div>
     <h1 class="products">🚘Products🚘</h1>
@@ -76,10 +40,9 @@
     <div class="card" style="width: 300px;">
         <img src="{{ product.image_url}}" class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="card-title">{{ product.name }}</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">{{ product.name }} (${{ product.price }})<br>(stock:{{ product.stock }})</h5>
+            <p class="card-text">{{product.description}}</p>
+            <a href="{{ product.page_url }}" class="btn btn-primary">More Information</a>
         </div>
     </div>
     {% endfor %}

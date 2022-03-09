@@ -19,8 +19,44 @@ body{
     margin: 0 0 0 1160px;
     border-radius: 2px;
 }
-.welcom{
+.welcome{
     margin: 0 0 0 280px;
+    color: deeppink;
+    font-size: 69px;
+    text-shadow: 1px 1px 2px black, 0 0 1em #0c0c0c, 0 0 0.6em #000000;
+}
+.welcomeBMW{
+    margin: 0 0 0 240px;
+    color: deeppink;
+    font-size: 69px;
+    text-shadow: 1px 1px 2px black, 0 0 1em #0c0c0c, 0 0 0.6em #000000;
+}
+.welcomeBENZ{
+    margin: 0 0 0 240px;
+    color: deeppink;
+    font-size: 69px;
+    text-shadow: 1px 1px 2px black, 0 0 1em #0c0c0c, 0 0 0.6em #000000;
+}
+.welcomeLamborghini{
+    margin: 0 0 0 150px;
+    color: deeppink;
+    font-size: 69px;
+    text-shadow: 1px 1px 2px black, 0 0 1em #0c0c0c, 0 0 0.6em #000000;
+}
+.welcomeBugatti{
+    margin: 0 0 0 200px;
+    color: deeppink;
+    font-size: 69px;
+    text-shadow: 1px 1px 2px black, 0 0 1em #0c0c0c, 0 0 0.6em #000000;
+}
+.welcomemaclaren{
+    margin: 0 0 0 200px;
+    color: deeppink;
+    font-size: 69px;
+    text-shadow: 1px 1px 2px black, 0 0 1em #0c0c0c, 0 0 0.6em #000000;
+}
+.welcomepagani{
+     margin: 0 0 0 220px;
     color: deeppink;
     font-size: 69px;
     text-shadow: 1px 1px 2px black, 0 0 1em #0c0c0c, 0 0 0.6em #000000;

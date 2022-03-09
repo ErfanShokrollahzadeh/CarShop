@@ -5,7 +5,9 @@ class Product(models.Model):
     name = models.CharField(max_length=100)
     price = models.FloatField()
     stock = models.IntegerField()
+    description = models.CharField(max_length=2083)
     image_url = models.CharField(max_length=2083)
+    page_url = models.CharField(max_length=200)
 
 class Slider(models.Model):
     objects = None
