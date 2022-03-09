@@ -7,7 +7,7 @@
 <hr style="height:10px">
 
 <form autocomplete="off">
-    <div class="autocomplete" >
+    <div class="autocomplete">
         <input id="myInput" type="text" placeholder="Search..">
     </div>
 </form>
@@ -16,44 +16,45 @@
 <div class="slideshow-container">
     {% for slider in sliders %}
     <div class="mySlides">
-<!--    <div class="numbertext">1 / 1</div>-->
+        <!--    <div class="numbertext">1 / 1</div>-->
         <img src="{{ slider.img_urls }}" style="width:1200px">
         <div class="text">info</div>
     </div>
 
-<!--    <div class="mySlides">-->
-<!--        <div class="numbertext">2 / 3</div>-->
-<!--        <img src="{{ product.image_url }}" style="width:100%">-->
-<!--        <div class="text">Caption Two</div>-->
-<!--    </div>-->
-<!--    <div class="mySlides">-->
-<!--        <div class="numbertext">3 / 3</div>-->
-<!--        <img src="{{ product.image_url }}" style="width:100%">-->
-<!--        <div class="text">Caption Three</div>-->
-<!--    </div>-->
+    <!--    <div class="mySlides">-->
+    <!--        <div class="numbertext">2 / 3</div>-->
+    <!--        <img src="{{ product.image_url }}" style="width:100%">-->
+    <!--        <div class="text">Caption Two</div>-->
+    <!--    </div>-->
+    <!--    <div class="mySlides">-->
+    <!--        <div class="numbertext">3 / 3</div>-->
+    <!--        <img src="{{ product.image_url }}" style="width:100%">-->
+    <!--        <div class="text">Caption Three</div>-->
+    <!--    </div>-->
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
     {% endfor %}
 </div>
-    <div class="slideshow-container">
+<br><br>
+<div class="slideshow-container">
     {% for slider in Slider2 %}
     <div class="mySlides">
-<!--    <div class="numbertext">1 / 1</div>-->
+        <!--    <div class="numbertext">1 / 1</div>-->
         <img src="{{ slider.img_urls }}" style="width:1200px">
         <div class="text">info</div>
     </div>
 
-<!--    <div class="mySlides">-->
-<!--        <div class="numbertext">2 / 3</div>-->
-<!--        <img src="{{ product.image_url }}" style="width:100%">-->
-<!--        <div class="text">Caption Two</div>-->
-<!--    </div>-->
-<!--    <div class="mySlides">-->
-<!--        <div class="numbertext">3 / 3</div>-->
-<!--        <img src="{{ product.image_url }}" style="width:100%">-->
-<!--        <div class="text">Caption Three</div>-->
-<!--    </div>-->
+    <!--    <div class="mySlides">-->
+    <!--        <div class="numbertext">2 / 3</div>-->
+    <!--        <img src="{{ product.image_url }}" style="width:100%">-->
+    <!--        <div class="text">Caption Two</div>-->
+    <!--    </div>-->
+    <!--    <div class="mySlides">-->
+    <!--        <div class="numbertext">3 / 3</div>-->
+    <!--        <img src="{{ product.image_url }}" style="width:100%">-->
+    <!--        <div class="text">Caption Three</div>-->
+    <!--    </div>-->
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -87,6 +88,8 @@
 <textarea id="comment" cols="40" rows="10" placeholder="Enter your commentd"></textarea><br>
 
 <label class="button">
-    <a href="#"><button>Submit</button></a>
+    <a href="#">
+        <button>Submit</button>
+    </a>
 </label>
 {% endblock %}
