@@ -42,3 +42,6 @@ def pagani (request):
 def toyota(request):
     sliders = Slider.objects.all()
     return render(request,'index9.html',{'sliders':sliders})
+
+def Confirmed(request):
+    return render(request,'confirmed.html')

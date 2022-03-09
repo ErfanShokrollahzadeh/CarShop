@@ -11,4 +11,5 @@ urlpatterns = [
     path('maclaren/',views.maclaren),
     path('pagani/',views.pagani),
     path('toyota/',views.toyota),
+    path('Confirmed/',views.Confirmed)
 ]

@@ -67,6 +67,12 @@ body{
     font-size: 70px;
     text-shadow: 1px 1px 2px #fd0101, 0 0 1em #000000, 0 0 0.6em #000000;
 }
+.MostVisited{
+    margin: 0px 0 0 400px;
+    color: #feff27;
+    font-size: 70px;
+    text-shadow: 1px 1px 2px #fd0101, 0 0 1em #000000, 0 0 0.6em #000000;
+}
 .row{
     margin: 0 0 0 50px !important;
     --bs-gutter-x: 5px !important;

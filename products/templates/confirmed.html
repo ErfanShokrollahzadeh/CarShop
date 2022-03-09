@@ -1,0 +1,55 @@
+{% block content %}
+<style>
+    body{background-color: #00b1ff}
+    h1{color: #feff27;
+    margin: 260px 0 0 270px;
+    font-size: 70px;
+    text-shadow: 1px 1px 2px #fd0101, 0 0 1em #000000, 0 0 0.6em #000000;}
+    p{color: #00f900;
+    margin: 0px 0 0 332px;
+    font-size: 40px;
+    text-shadow: 1px 1px 2px #fd0101, 0 0 1em #000000, 0 0 0.6em #000000;}
+
+    .pushable {
+    background: hsl(340deg 100% 32%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+  }
+  .front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: hsl(345deg 100% 47%);
+    color: white;
+    transform: translateY(-6px);
+  }
+
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }
+  .between{margin: 0 0 0 543px}
+
+</style>
+
+<div class="container">
+    <div>
+        <h1>🙏Thanks for the comment🙏</h1>
+        <p>👍your comment was successfully submitted👍</p>
+    </div>
+    <br><br>
+    <form action="/Car">
+    <div class="between">
+        <button class="pushable">
+  <span class="front">
+    Tap to go to the home screen
+  </span>
+        </button>
+    </div>
+    </form>
+
+</div>
+{% endblock %}
