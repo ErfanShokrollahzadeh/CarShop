@@ -1,6 +1,7 @@
 # from django.http import HttpResponse
 from django.shortcuts import render
-from .models import Product,Slider,Footer,Navbar,Slider2
+from .models import Product,Slider,Footer,Navbar,Slider2,LastestNew
+
 
 def Car(request):
     products = Product.objects.all()

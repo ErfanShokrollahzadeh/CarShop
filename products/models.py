@@ -26,3 +26,7 @@ class Footer(models.Model):
 class Slider2(models.Model):
     objects = None
     img_urls = models.CharField(max_length=2083)
+
+class LastestNew(models.Model):
+    object = None
+    email_adress = models.CharField(max_length=100)
