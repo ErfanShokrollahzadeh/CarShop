@@ -1,63 +1,74 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<div>
-    <h1 class="welcome">👋Welcom To CarShop👋</h1>
-</div>
-<hr style="height:10px">
-
-<form autocomplete="off">
-    <div class="autocomplete">
-        <input id="myInput" type="text" placeholder="Search..">
+    <div>
+        <h1 class="welcome">👋Welcom To CarShop👋</h1>
     </div>
-</form>
-<hr style="height:10px">
+    <hr style="height:10px">
 
-<div class="slideshow-container">
-    {% for slider in sliders %}
-    <div class="mySlides">
-        <img src="{{ slider.img_urls }}" style="width:1200px">
-        <div class="text">info</div>
-    </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    {% endfor %}
-</div>
-<div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-</div><br><br><br>
-
-
-<div>
-    <h1 class="products">🚘Products🚘</h1>
-</div>
-<br><br>
-
-<div class="row">
-    {% for product in products %}
-    <div class="card" style="width: 300px;">
-        <img src="{{ product.image_url}}" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">{{ product.name }} (${{ product.price }})<br>(stock:{{ product.stock }})</h5>
-            <p class="card-text">{{product.description}}</p>
-            <a href="{{ product.page_url }}" class="btn btn-primary">More Information</a>
+    <form autocomplete="off">
+        <div class="autocomplete">
+            <input id="myInput" type="text" placeholder="Search..">
         </div>
+    </form>
+    <hr style="height:10px">
+
+    <div class="slideshow-container">
+        {% for slider in sliders %}
+            <div class="mySlides">
+                <img src="{{ slider.img_urls }}" style="width:1200px">
+                <div class="text">info</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        {% endfor %}
     </div>
-    {% endfor %}
-</div>
-<br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div><br><br><br>
 
-<div>
-    <h1 class="MostVisited">👀Most Visited👀</h1>
-</div>
-<br><br>
-<textarea id="comment" cols="40" rows="10" placeholder="Enter your commentd"></textarea><br>
 
-<label class="button">
-    <a href="Confirmed/">
-        <button>Submit</button>
-    </a>
-</label>
+    <div>
+        <h1 class="products">🚘Products🚘</h1>
+    </div>
+    <br><br>
+
+    <div class="row">
+        {% for product in products %}
+            <div class="card" style="width: 300px;">
+                <img src="{{ product.image_url }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.name }} (${{ product.price }})<br>(stock:{{ product.stock }})</h5>
+                    <p class="card-text">{{ product.description }}</p>
+                    <a href="{{ product.page_url }}" class="btn btn-primary">More Information</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <br>
+
+    <div>
+        <h1 class="MostVisited">👀Most Visited👀</h1>
+    </div>
+    <br><br>
+    <textarea id="comment" cols="40" rows="10" placeholder="Enter your commentd"></textarea><br>
+
+    <label class="button">
+        <a href="Confirmed/">
+            <button>Submit</button>
+        </a>
+    </label>
+    <br><br>
+    <div>
+        <h1 class="text-danger">Enter your email to join lastest news</h1>
+    </div>
+    <textarea id="email" cols="45" rows="2" placeholder="Enter your Email"></textarea><br>
+
+    <label class="button">
+        <a href="Confim">
+            <button>Send</button>
+        </a>
+    </label>
 {% endblock %}
